@@ -10,11 +10,36 @@ int main() {
     int bispo = 5;
     int torre = 5;
     int rainha = 8;
+    int cavalo = 1;
     int contador;
+    char peçaMovimento;
+    
+/*
+Implementando uma movimento mais dinamica_Fase Teste...
+    prinf("\nSeja Bem vindo ao Jogo de Xadrez\n");
+    prinf("Peças Dsiponiveis para Movimentação:\n");
+    prinf("R - Rainha\n");
+    printf("T - Torre\n");
+    printf("B - Bispo\n");
+    prinf("C - Cavalo\n");
+    printf("Qual sua peça escolhida? ");
+    scanf("%c", &peçaMovimento);
 
+    switch(peçaMovimento){
+        case 'r': 
+        case 'R':
+            printf(" Quantas casas deseja move?\n");
+        case 'T':
+        case 't':
+            printf(" Quantas casas deseja move?\n");
+        case 'B':
+        case 'b':
+            printf(" Quantas casas deseja move?\n");
+        
+    }
+*/
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
-
      printf("Movimentação Bispo\n");
     for(int b = 0; b<=bispo; b++){
         printf("Direita Casa %d\n", b);
@@ -43,6 +68,13 @@ contador = 1;
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+    printf("\nMovimentação do Cavalo\n");
+    while(cavalo--){
+        for(int c = 1; c <=2; c++){
+            printf("Baixo\n");
+        }
+        printf("Esquerda\n");
+    }
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
